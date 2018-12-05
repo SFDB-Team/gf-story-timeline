@@ -1,0 +1,28 @@
+{
+	"about": {
+		"title": "정보",
+		"tip": "누락 또는 정정할 내용이 있으면, <br> 개선을 돕고 싶다면 연락 주세요.",
+		"github": "<a href='https://github.com/icaics/icaics.github.io/' target='_blank'>Github</a>",
+		"producer": "企划：<a href='https://weibo.com/icaics/' target='_blank'>@菜酱</a>",
+		"developer": "开发：<a href='https://weibo.com/icaics/' target='_blank'>@菜酱</a>",
+		"dev_helper": "开发协力：<a href='https://github.com/icaics/icaics.github.io/graphs/contributors' target='_blank'>Github</a>",
+		"zh_cn": "간체중문：<a href='https://weibo.com/icaics/' target='_blank'>@菜酱</a>",
+		"zh_tw": "번체중문：N/A",
+		"en": "영어 번역：N/A",
+		"jp": "일본어 번역：N/A",
+		"kr": "한국어 번역：<a href='https://github.com/ergo9ine/' target='_blank'>Ergo9ine</a>",
+		"close": "Close"
+	},
+	"enter": {
+		"title": "소녀전선 타임라인",
+		"caution": "스포일러 포함! 원치 않으면 읽지말아주세요.",
+		"info": "누락된 점은 지적 부탁드립니다.",
+		"about": "정보",
+		"enter": "타임라인으로"
+	},
+	"info": {
+		"title": "info",
+		"detail": "기능 및 내용에 대한 지휘관의 기여에 감사드립니다<br><br><a href='https://weibo.com/grifonkryuger' target='_blank'>@格里芬军事通讯局</a><br><a href='https://weibo.com/99zhen' target='_blank'>@不明真相的笨蛋</a><br><a href='https://weibo.com/6204494733' target='_blank'>@夜长行-</a><br><a href='https://weibo.com/gelifenhashiqi' target='_blank'>@一个爱学习的指挥官</a><br><a href='https://weibo.com/3938278656' target='_blank'>@云海之上的秋天</a><br><a href='https://weibo.com/niaogugu' target='_blank'>@鸟咕Scatknife</a><br><br>그리고 당신의 도움을 기다립니다. 지휘관 ...",
+		"close": "Close"
+	}
+}

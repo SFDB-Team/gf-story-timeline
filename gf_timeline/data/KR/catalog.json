@@ -1,0 +1,38 @@
+{
+	"title": "List",
+	"close": "Close",
+	"index": [
+		{
+			"title": "내용에 앞서",
+			"index": 0
+		},
+		{
+			"title": "변경사항",
+			"index": 1
+		},
+		{
+			"title": "「나비작전」",
+			"index": 22
+		},
+		{
+			"title": "EP.00 종자（The Seed）",
+			"index": 29
+		},
+		{
+			"title": "「소녀전선 Girls' Frontline」",
+			"index": 31
+		},
+		{
+			"title": "EP.01 소생（Wake Up）",
+			"index": 32
+		},
+		{
+			"title": "EP.02 메아리（The Echo）",
+			"index": 39
+		},
+		{
+			"title": "EP.03 침묵（Silence）",
+			"index": 48
+		}
+	]
+}

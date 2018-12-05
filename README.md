@@ -1,16 +1,16 @@
-# icaics.github.io
+# https://sfdb-team.github.io/gf-story-timeline/gf_timeline
 
-### [少女前线主线剧情时间轴 - Girls' Frontline Story Timeline](https://icaics.github.io/gf_timeline/)
+### [소녀전선 스토리 타임라인 - Girls' Frontline Story Timeline](https://sfdb-team.github.io/gf-story-timeline/gf_timeline/)
 
-#### 说明
+#### Note
 
-- 本时间轴因个人兴趣及练习网页开发所制作，灵感来自于以前看到过的「白箱时间轴」，旨在向更多的朋友介绍「[少女前线](http://gf.ppgame.com/web/pc/index.html)」游戏主线剧情的魅力。
+- 이 타임라인은 개인의 관심과 웹 개발 연습을 위해 만들어졌으며, 이번에 보았던 「시코바코 타임라인」에서 영감을 얻어, 「[소녀전선](https://www.girlsfrontline.co.kr)」의 스토리의 매력을 더 많은 친구에게 소개하고자 합니다.
 
-- 文本在游戏原有剧情上结合了整体背景故事设定，配以部分设定说明，资料参考了部分网络上公开的设定、剧情文本合集与剧情截图。
+- 텍스트는 게임의 스토리 전개와 전체적인 배경 설정과 일부 설정 설명을 곁들이고, 온라인상에서 공개된 설정과 플롯을 참고했습니다.
 
-- 使用游戏素材版权归游戏制作组所有，个人能力有限，如有疏漏及错误还请指正，最终剧情请以游戏本体展示为准。
+- 게임 소재를 사용하였으므로 저작권은 소녀전선의 제작진이 소유하며, 개인 능력의 한계가 있으므로, 누락 및 오류가 있는 경우에는 정정해 주시고, 최종 줄거리는 게임을 통해 확인해주세요.
 
-#### 参考资料
+#### Reference
 
 - [萌娘百科 - 少女前线:世界观](https://zh.moegirl.org/少女前线:世界观)
 - [NGA 少女前线-16LAB研究院 少女前线主线剧情文本阅读](https://bbs.ngacn.cc/read.php?tid=12213204)
@@ -20,80 +20,78 @@
 - [2018年冬日活动“坍缩点”](https://weibo.com/ttarticle/p/show?id=2309404213543208629472)
 - [少女前线2018冬活“塌缩点”全剧情对话整理](https://weibo.com/ttarticle/p/show?id=2309404205309404030707)
 
-#### 项目说明
+#### Description
 
-- 项目采用数据分离形式，内容文本数据在 [data](https://github.com/icaics/icaics.github.io/tree/master/gf_timeline/data) 文件夹下，图片资源在 [image](https://github.com/icaics/icaics.github.io/tree/master/gf_timeline/image) 文件夹下，分不同语言存储
+- 항목은 데이터 분리 형식을 채택하여, 텍스트 리소스는 [data](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/data/) 폴더 안에, 이미지 리소스는 [image](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/image) 폴더 안에 각각 다른 언어로 저장됩니다.
+- 데이터 구조 가이드
 
-- 数据结构说明
-
-	- [info.json](https://github.com/icaics/icaics.github.io/blob/master/gf_timeline/data/ZH_CN/info.json) 为项目说明，请忽略
+	- [info.json](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/data/KR/info.json) 항목을 설명합니다.
 	
-	- [catalog.json](https://github.com/icaics/icaics.github.io/blob/master/gf_timeline/data/ZH_CN/catalog.json) 为目录对应数据
+	- [catalog.json](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/data/KR/catalog.json) List의 항목을 타임라인에 대응시킵니다.
 	
 	```
 	{
-		"title": "目录",
-		"close": "返回",
+		"title": "카탈로그",
+		"close": "돌아가기",
 		"index": [
 			{
-				"title": "写在前面",
-				"index": 0 // 该数字可以直接通过 data.json 对应目标点所在行数 - 2) / 10 得到
+				"title": "내용에 앞서",
+				"index": 0 // data.json의 데이터에 대응시킵니다.
 			},
 		]
 	}
 	```
 	
-	- [header.json](https://github.com/icaics/icaics.github.io/blob/master/gf_timeline/data/ZH_CN/header.json) 为时间轴顶部 Tab 对应数据
+	- [header.json](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/data/KR/header.json) 타임라인 상단탭에 대응합니다.
 	
 	```
 	[
 		{
-			"title": "写在前面",
-			"position_x": 0 // 需要与 data.json 中的 x 坐标位置数据对应
+			"title": "내용에 앞서",
+			"position_x": 0 // data.json의 X 좌표 데이터에 대응합니다.
 		},
 	]
 	```
 
-	- [data.json](https://github.com/icaics/icaics.github.io/blob/master/gf_timeline/data/ZH_CN/data.json) 为时间轴主数据
+	- [data.json](https://github.com/SFDB-Team/gf-story-timeline/blob/master/gf_timeline/data/KR/data.json) 타임라인 데이터
 	
 	```
 	[
 		{
-			"title": "说明",
-			"subtitle": "少女前线主线剧情时间轴",
-			"content": "内容，使用 <br> 换行，注意字数限制，尽量适配移动端浏览器",
-			"image": "common_title.png", // image 文件夹中对应的图片名
-			"position_y": 0, // 时间轴纵向位置，0-2
-			"position_x": 0, // 时间轴横向位置，目前需要手动计算
-			"position_width": 200 // 时间轴项目宽度，默认为 300，非特殊需要不建议修改
+			"title": "설명",
+			"subtitle": "소녀전선 스토리 타임라인",
+			"content": "내용, 줄바꿈<br>등, 단어 수 제한에 주의하여 모바일 브라우저에 최대한 적합하도록",
+			"image": "common_title.png", // image 폴더안에 존재하는 이미지
+			"position_y": 0, //시간축 세로 위치，0-2
+			"position_x": 0, //시간축 가로 위치, 수동으로 계산해야함.
+			"position_width": 200 // 시간축 가로의 길이，기본값 300，특별히 수정하지 않는걸 권함.
 		},
-		// 注意这里的空行，为方便 catalog.json 快速找到对应位置链接
+		// 여기의 빈 행에 주의하여 편리하게 사용할 수 있습니다. catalog.json 해당 위치를 신속하게 찾을 수도 있습니다..
 		{
 			...
 		},
 	]
 	```
 
-- 图片命名规范
+- 이미지 가이드
 	
-	- 图片全部使用小写文件名，`.png` 格式的图片，尺寸为 `600 x 336` 大小的横向长方形图片，可以依情况略微缩小，但不能超过该尺寸
-	- 图片保存时需要使用 `Web 格式保存 + PNG-8 128 仿色` 方式保存以减小图片体积 
-	- `common_` 开头的文件为通用图片
-	- `intro_` 开头的文件为背景介绍章节图片
-	- `x-y_` 开头的文件为普通章节图片
-	- `x-e-y_` 开头的文件为紧急章节图片
-	- `spx-y-z` 开头的文件为活动章节图片，`x` 为第 x 次活动，`y-z` 为活动地图代号
+	- 이미지 모두 알파벳 소문자를 이름으로 사용합니다. 포맷은 `.png`, 크기가 `600 x 336` 인 직사각형이며 약간 줄일 수 있지만 이 크기를 초과 할 수 없습니다.
+	- 이미지를 사용할때는 `Web format + PNG-8 128 디더링`을 사용해야합니다.
+	- `common_` 일반 이미지에 사용합니다.
+	- `intro_` 배경에 대한 그림에 사용합니다.
+	- `x-y_` 일반전역에 사용합니다.
+	- `x-e-y_` 긴급전역에 사용합니다.
+	- `spx-y-z` 이벤트전역에 사용합니다. 'x'는 x 번째 이벤트이며 'y-z'는 맵 코드입니다.
 
-#### 期待您的参与
+#### 당신의 참여를 기대합니다
 
-- 阅读大量剧情文本，同时不遗漏一些重要的信息，还要保证剧情的连贯和有趣，是件比较麻烦的工作。如果您有兴趣，欢迎参与进来。
+	- 중요한 정보를 놓치지 않고, 스토리의 연관성과 재미를 보장해주는 비교적 귀찮고 번거로운 작업입니다. 혹여 지휘관께서 관심이 있으시면 저희와 함께해주십시오.
 
-- 如果不方便直接提交 PR，可以通过 Excel 或 txt 文本等任何形式，按之前已有的文案风格，总结某一章节的对应剧情（哪怕没有图片）。
+	- PR을 하는 것이 불편하다면, 엑셀 또는 TXT등 어떤 형태로든 기존의 형식으로 스토리를 요약해 주시면 됩니다.
 
-- 再次感谢您的浏览与支持！
-
+	- 이곳에 찾아 주셔서 다시 한 번 감사드립니다!
 ---
 
-### [富文本编辑器](https://icaics.github.io/richtext/)
+### [문서편집기](https://icaics.github.io/richtext/)
 
 Based on [webfashionist / RichText](https://github.com/webfashionist/RichText)

@@ -1,40 +1,36 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
-
-	<meta name="keywords" content="少女前线时间轴, GirlsFrontline">
-	<meta name="description" content="少女前线主线剧情时间轴, Girls' Frontline Story Timeline">
+<!DOCTYPE html><html lang="ko"><head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="소녀전선,소전,GFL,girls' frontline,db,database,디비,데이터베이스,시뮬레이터,계산기,simulator,calcurator,연대기,timeline">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=1.0,user-scalable=no">
+	<meta name="description" content="소녀전선 타임라인,Girls' Frontline Story Timeline">
 	<meta name="Robots" content="index">
-
+	<meta property="og:site_name" content="Girls FrontLine Story Timeline">
+	<meta property="og:url" content="https://sf2031.com/gf-story-timeline/gf_timeline">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Girls FrontLine Story Timeline">
+	<meta property="og:description" content="Girls FrontLine Story Timeline">
+	<meta property="og:image" content="https://sf2031.com/img/html/og_icon.png">
+	<meta property="me2:image" content="https://sf2031.com/img/html/og_icon.png">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://sf2031.com/gf-story-timeline/gf_timeline">
+	<meta name="twitter:title" content="Girls FrontLine Story Timeline">
+	<meta name="twitter:description" content="Girls FrontLine Story Timeline">
+	<meta name="twiiter:image" content="https://sf2031.com/img/html/og_icon.png">
 	<title></title>
-
 	<link rel="icon" href="favicon.ico"/>
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-	<script type="text/javascript" src="lib/jquery.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&amp;subset=korean" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>body{font-family:'Noto Sans KR',sans-serif}</style>
 <body ontouchmove="event.preventDefault()">
 	<!-- ontouchmove="event.stopPropagation()" -->
-	
-	<!-- WeChat Share -->
-	<div style="display: none;"><img src="image/icon.png"/></div>
-
 	<!-- About -->
 	<div id="about_frame">
 		<div id="about_bk">
-
 			<div id="about_content">
-
 				<div id="about_title"></div>
 				<div id="about_tip"></div>
 				<div id="about_github"></div>
-
 				<div id="about_producer"></div>
 				<div id="about_developer"></div>
 				<div id="about_dev_helper"></div>
@@ -43,24 +39,17 @@
 				<div id="about_kr"></div>
 				<div id="about_en"></div>
 				<div id="about_jp"></div>
-
 				<div id="about_close" onclick="closeAbout()"></div>
-
 			</div>
-
 		</div>
 	</div>
-
 	<!-- Enter -->
 	<div id="enter_frame">
 		<div id="enter_bk">
-
 			<div id="enter_content">
-
 				<div id="enter_title"></div>
 				<div id="enter_caution"></div>
 				<div id="enter_info"></div>
-
 				<div id="lang">
 					<div id="lang_ZH_CN" onclick="switchLang('ZH_CN')">简体中文</div>
 					<div id="lang_ZH_TW" onclick="switchLang('ZH_TW')">繁體中文</div>
@@ -68,49 +57,33 @@
 					<div id="lang_EN" onclick="switchLang('EN')">English</div>
 					<div id="lang_JP" onclick="switchLang('JP')">日本語</div>
 				</div>
-
 				<div id="enter_about" onclick="clickAbout()"></div>
-
 				<div id="enter_enter" onclick="enterStory()"></div>
-
 			</div>
-
 		</div>
 	</div>
-
 	<!-- Info -->
 	<div id="info_frame">
 		<div id="info_bk">
-
 			<div id="info_content" ontouchmove="event.stopPropagation()">
-
 				<div id="info_title"></div>
 				<div id="info_detail"></div>
 				<div id="info_close" onclick="closeInfo()"></div>
-
 			</div>
-
 		</div>
 	</div>
-
 	<!-- Catalog -->
 	<div id="catalog_frame">
 		<div id="catalog_bk">
-
 			<div id="catalog_content" ontouchmove="event.stopPropagation()">
-
 				<div id="catalog_title"></div>
 				<div id="catalog_detail"></div>
 				<div id="catalog_close" onclick="closeCatalog()"></div>
-
 			</div>
-
 		</div>
 	</div>
-
 	<!-- Main -->
 	<div id="main_frame">
-
 		<div id="detail">
 			<div id="detail_btnskip_left" onclick="clickDetailBtn(-20)">
 				<img src="image/btn_skip_left.png">
@@ -139,7 +112,6 @@
 				<img src="image/btn_right.png">
 			</div>
 		</div>
-
 		<div id="timeline">
 			<div id="timeline_header">
 				<div id="timeline_header_track"></div>
@@ -149,11 +121,8 @@
 			<div id="timeline_pointer"></div>
 			<!-- <div id="timeline_footer"></div> -->
 		</div>
-
 	</div>
-
-	<script type="text/javascript" src="script/script.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+	<script src="script/script.js"></script>
 </body>
-
 </html>
